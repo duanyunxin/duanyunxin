@@ -18,11 +18,20 @@ add_executable(lof
                 src/lof.cpp)
 add_executable(sliding_window_filter
                 src/sliding_window_filter.cpp)
+add_executable(nonlinear_least_squared
+                src/nonlinear_least_squared.cpp)
+add_executable(finite_difference_jocobian
+                src/finite_difference_jocobian.cpp)
+add_executable(gauss_newton_method
+                src/gauss_newton_method.cpp)
 
 install(TARGETS
   least_squared
   lof
   sliding_window_filter
+  nonlinear_least_squared
+  finite_difference_jocobian
+  gauss_newton_method
 
   DESTINATION lib/${PROJECT_NAME})
 
