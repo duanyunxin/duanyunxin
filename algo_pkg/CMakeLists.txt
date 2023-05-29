@@ -24,6 +24,10 @@ add_executable(finite_difference_jocobian
                 src/finite_difference_jocobian.cpp)
 add_executable(gauss_newton_method
                 src/gauss_newton_method.cpp)
+# add_executable(levenberg_marquardt
+#                 src/levenberg_marquardt.cpp)
+add_executable(spline_curve
+                src/spline_curve.cpp)
 
 install(TARGETS
   least_squared
@@ -32,6 +36,8 @@ install(TARGETS
   nonlinear_least_squared
   finite_difference_jocobian
   gauss_newton_method
+  # levenberg_marquardt
+  spline_curve
 
   DESTINATION lib/${PROJECT_NAME})
 
