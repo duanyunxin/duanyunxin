@@ -28,6 +28,10 @@ add_executable(gauss_newton_method
 #                 src/levenberg_marquardt.cpp)
 add_executable(spline_curve
                 src/spline_curve.cpp)
+add_executable(gradient_descent
+                src/gradient_descent.cpp)
+add_executable(wrap_to_pi
+                src/wrap_to_pi.cpp)
 
 install(TARGETS
   least_squared
@@ -38,6 +42,8 @@ install(TARGETS
   gauss_newton_method
   # levenberg_marquardt
   spline_curve
+  gradient_descent
+  wrap_to_pi
 
   DESTINATION lib/${PROJECT_NAME})
 
