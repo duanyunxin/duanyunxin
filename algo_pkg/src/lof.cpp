@@ -81,7 +81,7 @@ double localOutlierFactor(const vector<vector<double>>& distances, int point_ind
 int main()
 {
     vector<Point<double>> data = {{1.0, 2.0}, {2.0, 3.0}, {3.0, 4.0}, {4.0, 5.0}, {10.0, 11.0}};
-    int k = 3; // k近邻的数量
+    int k = 2; // k近邻的数量
 
     vector<vector<double>> distances(data.size(), vector<double>(data.size()));
     for (int i = 0; i < data.size(); ++i) {
