@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(Eigen3 REQUIRED)
+find_package(OpenCV REQUIRED)
 
 include_directories(${EIGEN3_INCLUDE_DIR})
 
@@ -34,6 +35,10 @@ add_executable(mutex_test
                 src/mutex_test.cpp)
 add_executable(mahalanobis_dis
                 src/mahalanobis_dis.cpp)
+add_executable(calc_distance
+                src/calc_distance.cpp)
+add_executable(cosine_similarity
+                src/cosine_similarity.cpp)
 
 install(TARGETS
   least_squared
@@ -47,6 +52,8 @@ install(TARGETS
   wrap_to_pi
   mutex_test
   mahalanobis_dis
+  calc_distance
+  cosine_similarity
 
   DESTINATION lib/${PROJECT_NAME})
 

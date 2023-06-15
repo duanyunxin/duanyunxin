@@ -7,7 +7,7 @@ double mahalanobisDistance(
     const Eigen::MatrixXd& cov) 
 {
     Eigen::VectorXd diff = x - mean;
-    Eigen::MatrixXd inv_cov = cov.inverse();
+    Eigen::MatrixXd inv_cov = cov.inverse(); // 协方差矩阵的逆
     double mahalanobis_distance = std::sqrt((diff.transpose() * inv_cov * diff)(0, 0));
     return mahalanobis_distance;
 }
